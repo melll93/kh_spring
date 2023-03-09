@@ -17,6 +17,11 @@
 			<beans:property name="mappings">
 				<beans:props>
 					<beans:prop key="/board3/boardList.sp">board-controller</beans:prop>
+					<beans:prop key="/board3/boardDetail.sp">board-controller</beans:prop>
+					<beans:prop key="/board3/jsonBoardList.sp">board-controller</beans:prop>
+					<beans:prop key="/board3/boardInsert.sp">board-controller</beans:prop>
+					<beans:prop key="/board3/boardUpdate.sp">board-controller</beans:prop>
+					<beans:prop key="/board3/boardDelete.sp">board-controller</beans:prop>
 				</beans:props>
 			</beans:property>
 	</beans:bean>				
@@ -28,6 +33,11 @@
 		<beans:property name="mappings">
 			<beans:props>
 				<beans:prop key="/board3/boardList.sp">boardList</beans:prop>
+					<beans:prop key="/board3/boardDetail.sp">boardDetail</beans:prop>
+					<beans:prop key="/board3/jsonBoardList.sp">jsonBoardList</beans:prop>
+					<beans:prop key="/board3/boardInsert.sp">boardInsert</beans:prop>
+					<beans:prop key="/board3/boardUpdate.sp">boardUpdate</beans:prop>
+					<beans:prop key="/board3/boardDelete.sp">boardDelete</beans:prop>
 			</beans:props>
 		</beans:property>
 	</beans:bean>	  	
