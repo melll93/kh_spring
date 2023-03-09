@@ -1,4 +1,4 @@
-package com.example.demo.vo;
+package com.example.prac.vo;
 
 public class BoardMasterVO {
 	private int    bm_no     =0;//  

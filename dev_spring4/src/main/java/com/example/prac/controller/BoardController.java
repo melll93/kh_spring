@@ -1,4 +1,4 @@
-package com.example.demo.controller;
+package com.example.prac.controller;
 
 
 import java.util.HashMap;
@@ -13,8 +13,8 @@ import org.slf4j.LoggerFactory;
 import org.springframework.web.servlet.ModelAndView;
 import org.springframework.web.servlet.mvc.multiaction.MultiActionController;
 
-import com.example.demo.logic.BoardLogic;
-import com.example.demo.util.HashMapBinder;
+import com.example.prac.logic.BoardLogic;
+import com.example.prac.util.HashMapBinder;
 
 //왜 나만 상속을 받아야 하나요? - 
 public class BoardController extends MultiActionController {

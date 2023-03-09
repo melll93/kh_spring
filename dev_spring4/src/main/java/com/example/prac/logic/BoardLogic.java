@@ -1,4 +1,4 @@
-package com.example.demo.logic;
+package com.example.prac.logic;
 
 import java.util.ArrayList;
 import java.util.List;
@@ -7,7 +7,7 @@ import java.util.Map;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 
-import com.example.demo.dao.BoardDao;
+import com.example.prac.dao.BoardDao;
 
 public class BoardLogic {
 	private static final Logger logger = LoggerFactory.getLogger(BoardLogic.class);

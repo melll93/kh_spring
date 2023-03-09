@@ -1,4 +1,4 @@
-package com.example.demo.util;
+package com.example.prac.util;
 
 import java.util.Enumeration;
 import java.util.Map;
