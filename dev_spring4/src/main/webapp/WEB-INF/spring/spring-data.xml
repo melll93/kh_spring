@@ -29,7 +29,7 @@
 	<bean id="sqlSessionTemplate" class="org.mybatis.spring.SqlSessionTemplate">
 			<constructor-arg index="0" ref="sqlSessionFactory"/>
 	</bean>	
-	<bean id="board-dao" class="com.example.demo.dao.BoardDao">
+	<bean id="board-dao" class="com.example.prac.dao.BoardDao">
 		<property name="sqlSessionTemplate" ref="sqlSessionTemplate"/>
 	</bean>		
 </beans>

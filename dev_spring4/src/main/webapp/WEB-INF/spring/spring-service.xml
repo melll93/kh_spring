@@ -12,7 +12,7 @@
 	<bean id="localeResolver" class="org.springframework.web.servlet.i18n.SessionLocaleResolver">
 	    <property name="defaultLocale" value="ko">
 	</property></bean>	
-	<bean id="board-logic" class="com.example.demo.logic.BoardLogic">
+	<bean id="board-logic" class="com.example.prac.logic.BoardLogic">
 		<property name="boardDao" ref="board-dao"/>
 	</bean>
 </beans>

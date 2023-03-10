@@ -11,9 +11,28 @@
 	
 	<!-- Enables the Spring MVC @Controller programming model -->
 	<annotation-driven />
+<<<<<<< HEAD
+	<beans:bean id="default-handler-mapping" 
+	class="org.springframework.web.servlet.handler.BeanNameUrlHandlerMapping"/>
+	<beans:bean name="/di/insaList.sp" class="com.example.prac.controller.ListController">
+	<beans:property name="insaBean2">
+		<beans:list>
+			<beans:value>Hi!!!</beans:value>
+			<beans:value>Have a Good Time!!!</beans:value>
+			<beans:value>Have a Nice Day!!!</beans:value>
+		</beans:list>
+	</beans:property>
+	</beans:bean>
+=======
 	
 	<beans:bean id="default-handler-mapping" class="org.springframework.web.servlet.handler.BeanNameUrlHandlerMapping" />
 	
+<<<<<<< HEAD
+	<beans:bean id="default-handler-mapping" class="org.springframework.web.servlet.handler.BeanNameUrlHandlerMapping" />
+	
+=======
+>>>>>>> 5f2df30e1dc070e66229c72c2198d9463d22c215
+>>>>>>> melll
 	<beans:bean id="url-mapping"
 			class="org.springframework.web.servlet.handler.SimpleUrlHandlerMapping">
 			<beans:property name="mappings">
@@ -27,7 +46,7 @@
 				</beans:props>
 			</beans:property>
 	</beans:bean>				
-  	<beans:bean id="board-controller" class="com.example.demo.controller.BoardController">
+  	<beans:bean id="board-controller" class="com.example.prac.controller.BoardController">
 		<beans:property name="methodNameResolver" ref="board-resolver"/>  		
   		<beans:property name="boardLogic" ref="board-logic"/>
   	</beans:bean>
@@ -35,11 +54,25 @@
 		<beans:property name="mappings">
 			<beans:props>
 				<beans:prop key="/board3/boardList.sp">boardList</beans:prop>
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+				<beans:prop key="/board3/boardDetail.sp">boardDetail</beans:prop>
+				<beans:prop key="/board3/jsonBoardList.sp">jsonBoardList</beans:prop>
+				<beans:prop key="/board3/boardInsert.sp">boardInsert</beans:prop>
+				<beans:prop key="/board3/boardUpdate.sp">boardUpdate</beans:prop>
+				<beans:prop key="/board3/boardDelete.sp">boardDelete</beans:prop>
+=======
+>>>>>>> melll
 					<beans:prop key="/board3/boardDetail.sp">boardDetail</beans:prop>
 					<beans:prop key="/board3/jsonBoardList.sp">jsonBoardList</beans:prop>
 					<beans:prop key="/board3/boardInsert.sp">boardInsert</beans:prop>
 					<beans:prop key="/board3/boardUpdate.sp">boardUpdate</beans:prop>
 					<beans:prop key="/board3/boardDelete.sp">boardDelete</beans:prop>
+<<<<<<< HEAD
+=======
+>>>>>>> 5f2df30e1dc070e66229c72c2198d9463d22c215
+>>>>>>> melll
 			</beans:props>
 		</beans:property>
 	</beans:bean>	  	
@@ -53,7 +86,7 @@
 		<beans:property name="suffix" value=".jsp" />
 	</beans:bean>
 	
-	<context:component-scan base-package="com.example.demo" />
+	<context:component-scan base-package="com.example.prac" />
 	
 	
 	
