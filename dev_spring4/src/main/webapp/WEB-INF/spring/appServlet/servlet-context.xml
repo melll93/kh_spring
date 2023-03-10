@@ -11,16 +11,31 @@
 	
 	<!-- Enables the Spring MVC @Controller programming model -->
 	<annotation-driven />
-	
+	<beans:bean id="default-handler-mapping" 
+	class="org.springframework.web.servlet.handler.BeanNameUrlHandlerMapping"/>
+	<beans:bean name="/di/insaList.sp" class="com.example.prac.controller.ListController">
+	<beans:property name="insaBean2">
+		<beans:list>
+			<beans:value>Hi!!!</beans:value>
+			<beans:value>Have a Good Time!!!</beans:value>
+			<beans:value>Have a Nice Day!!!</beans:value>
+		</beans:list>
+	</beans:property>
+	</beans:bean>
 	<beans:bean id="url-mapping"
 			class="org.springframework.web.servlet.handler.SimpleUrlHandlerMapping">
 			<beans:property name="mappings">
 				<beans:props>
 					<beans:prop key="/board3/boardList.sp">board-controller</beans:prop>
+					<beans:prop key="/board3/boardDetail.sp">board-controller</beans:prop>
+					<beans:prop key="/board3/jsonBoardList.sp">board-controller</beans:prop>
+					<beans:prop key="/board3/boardInsert.sp">board-controller</beans:prop>
+					<beans:prop key="/board3/boardUpdate.sp">board-controller</beans:prop>
+					<beans:prop key="/board3/boardDelete.sp">board-controller</beans:prop>
 				</beans:props>
 			</beans:property>
 	</beans:bean>				
-  	<beans:bean id="board-controller" class="com.example.demo.controller.BoardController">
+  	<beans:bean id="board-controller" class="com.example.prac.controller.BoardController">
 		<beans:property name="methodNameResolver" ref="board-resolver"/>  		
   		<beans:property name="boardLogic" ref="board-logic"/>
   	</beans:bean>
@@ -28,6 +43,11 @@
 		<beans:property name="mappings">
 			<beans:props>
 				<beans:prop key="/board3/boardList.sp">boardList</beans:prop>
+				<beans:prop key="/board3/boardDetail.sp">boardDetail</beans:prop>
+				<beans:prop key="/board3/jsonBoardList.sp">jsonBoardList</beans:prop>
+				<beans:prop key="/board3/boardInsert.sp">boardInsert</beans:prop>
+				<beans:prop key="/board3/boardUpdate.sp">boardUpdate</beans:prop>
+				<beans:prop key="/board3/boardDelete.sp">boardDelete</beans:prop>
 			</beans:props>
 		</beans:property>
 	</beans:bean>	  	
@@ -41,7 +61,7 @@
 		<beans:property name="suffix" value=".jsp" />
 	</beans:bean>
 	
-	<context:component-scan base-package="com.example.demo" />
+	<context:component-scan base-package="com.example.prac" />
 	
 	
 	
