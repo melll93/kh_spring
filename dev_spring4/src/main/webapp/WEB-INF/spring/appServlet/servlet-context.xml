@@ -11,6 +11,7 @@
 	
 	<!-- Enables the Spring MVC @Controller programming model -->
 	<annotation-driven />
+<<<<<<< HEAD
 	<beans:bean id="default-handler-mapping" 
 	class="org.springframework.web.servlet.handler.BeanNameUrlHandlerMapping"/>
 	<beans:bean name="/di/insaList.sp" class="com.example.prac.controller.ListController">
@@ -22,6 +23,11 @@
 		</beans:list>
 	</beans:property>
 	</beans:bean>
+=======
+	
+	<beans:bean id="default-handler-mapping" class="org.springframework.web.servlet.handler.BeanNameUrlHandlerMapping" />
+	
+>>>>>>> 5f2df30e1dc070e66229c72c2198d9463d22c215
 	<beans:bean id="url-mapping"
 			class="org.springframework.web.servlet.handler.SimpleUrlHandlerMapping">
 			<beans:property name="mappings">
@@ -43,11 +49,19 @@
 		<beans:property name="mappings">
 			<beans:props>
 				<beans:prop key="/board3/boardList.sp">boardList</beans:prop>
+<<<<<<< HEAD
 				<beans:prop key="/board3/boardDetail.sp">boardDetail</beans:prop>
 				<beans:prop key="/board3/jsonBoardList.sp">jsonBoardList</beans:prop>
 				<beans:prop key="/board3/boardInsert.sp">boardInsert</beans:prop>
 				<beans:prop key="/board3/boardUpdate.sp">boardUpdate</beans:prop>
 				<beans:prop key="/board3/boardDelete.sp">boardDelete</beans:prop>
+=======
+					<beans:prop key="/board3/boardDetail.sp">boardDetail</beans:prop>
+					<beans:prop key="/board3/jsonBoardList.sp">jsonBoardList</beans:prop>
+					<beans:prop key="/board3/boardInsert.sp">boardInsert</beans:prop>
+					<beans:prop key="/board3/boardUpdate.sp">boardUpdate</beans:prop>
+					<beans:prop key="/board3/boardDelete.sp">boardDelete</beans:prop>
+>>>>>>> 5f2df30e1dc070e66229c72c2198d9463d22c215
 			</beans:props>
 		</beans:property>
 	</beans:bean>	  	
