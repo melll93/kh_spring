@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<classpath>
+	<classpathentry kind="con" path="org.eclipse.jdt.launching.JRE_CONTAINER"/>
+	<classpathentry kind="src" path="dev_spring4/src/main/java"/>
+	<classpathentry kind="src" path="gradleDemo/src/main/java"/>
+	<classpathentry kind="src" path="gradleDemo/src/test/java"/>
+	<classpathentry kind="src" path="gradledemo2/src/main/java"/>
+	<classpathentry kind="src" path="gradledemo2/src/test/java"/>
+	<classpathentry kind="src" path="mavenDemo/src/main/java"/>
+	<classpathentry kind="src" path="mavenDemo/src/test/java"/>
+	<classpathentry kind="lib" path="dev_spring4/src/main/webapp/WEB-INF/lib/aopalliance-1.0.jar"/>
+	<classpathentry kind="lib" path="dev_spring4/src/main/webapp/WEB-INF/lib/aspectjweaver-1.5.3.jar"/>
+	<classpathentry kind="lib" path="dev_spring4/src/main/webapp/WEB-INF/lib/ojdbc6.jar"/>
+	<classpathentry kind="lib" path="gradleDemo/gradle/wrapper/gradle-wrapper.jar"/>
+	<classpathentry kind="lib" path="gradledemo2/gradle/wrapper/gradle-wrapper.jar"/>
+	<classpathentry kind="lib" path="mavenDemo/.mvn/wrapper/maven-wrapper.jar"/>
+	<classpathentry kind="output" path="dev_spring4/target/classes"/>
+</classpath>

@@ -7,7 +7,7 @@ public class InsaMain {
 
 	public static void main(String[] args) {
 		ApplicationContext context = 
-				new ClassPathXmlApplicationContext("com\\example\\demo\\di\\insaBean.xml");
+				new ClassPathXmlApplicationContext("com\\example\\prac\\di\\insaBean.xml");
 		InsaList insaList = (InsaList)context.getBean("insa");
 		System.out.println(insaList.insaBean);
 		//
