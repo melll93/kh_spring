@@ -1,4 +1,4 @@
-package com.example.demo.service;
+package com.example.demo.logic;
 
 import java.util.ArrayList;
 import java.util.List;
@@ -11,6 +11,7 @@ import org.springframework.stereotype.Service;
 import org.springframework.web.bind.annotation.GetMapping;
 
 import com.example.demo.controller.RestBoardController;
+import com.example.demo.dao.BoardDao;
 
 @Service
 public class BoardLogic {
