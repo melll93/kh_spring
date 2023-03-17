@@ -18,18 +18,18 @@ import com.example.demo.logic.BoardLogic;
 @RequestMapping("/board/*")
 public class BoardController {
 	Logger logger = LoggerFactory.getLogger(BoardController.class);
-	
 	@Autowired
 	private BoardLogic boardLogic = null;
-	
+
 	@GetMapping("boardList")
 	public String boardList(Model model, @RequestParam Map<String, Object> pMap) {
-		logger.info("boardController.boardList 호출");
+		System.out.println("boardList 호출");
 		logger.info(pMap.toString());
-		
+		logger.info("boardList 호출");
 		List<Map<String, Object>> bList = null;
 		bList = boardLogic.boardList(pMap);
 		model.addAttribute("bList", bList);
+//		return "forward:boardList.jsp";
 		return "board/boardList";
 	}
 }

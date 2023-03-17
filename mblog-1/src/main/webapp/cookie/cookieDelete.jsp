@@ -4,9 +4,13 @@
 <html>
 <head>
 <meta charset="UTF-8">
-<title>계층형 게시판(webapp)</title>
+<title>쿠키삭제</title>
 </head>
 <body>
-	<h3>계층형 게시판</h3>
+<%
+	Cookie cookie = new Cookie("notebook","");
+	cookie.setMaxAge(0);
+	response.addCookie(cookie);
+%>
 </body>
 </html>

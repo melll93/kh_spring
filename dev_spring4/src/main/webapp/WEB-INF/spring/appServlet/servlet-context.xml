@@ -7,11 +7,8 @@
 		http://www.springframework.org/schema/beans https://www.springframework.org/schema/beans/spring-beans.xsd
 		http://www.springframework.org/schema/context https://www.springframework.org/schema/context/spring-context.xsd">
 
-	<!-- DispatcherServlet Context: defines this servlet's request-processing infrastructure -->
-	
-	<!-- Enables the Spring MVC @Controller programming model -->
 	<annotation-driven />
-<<<<<<< HEAD
+
 	<beans:bean id="default-handler-mapping" 
 	class="org.springframework.web.servlet.handler.BeanNameUrlHandlerMapping"/>
 	<beans:bean name="/di/insaList.sp" class="com.example.prac.controller.ListController">
@@ -23,21 +20,7 @@
 		</beans:list>
 	</beans:property>
 	</beans:bean>
-=======
-	
-	<beans:bean id="default-handler-mapping" class="org.springframework.web.servlet.handler.BeanNameUrlHandlerMapping" />
-<<<<<<< HEAD
-	
-<<<<<<< HEAD
-	<beans:bean id="default-handler-mapping" class="org.springframework.web.servlet.handler.BeanNameUrlHandlerMapping" />
-	
-=======
->>>>>>> 5f2df30e1dc070e66229c72c2198d9463d22c215
->>>>>>> melll
-=======
-	
->>>>>>> 5f2df30e1dc070e66229c72c2198d9463d22c215
->>>>>>> melll
+
 	<beans:bean id="url-mapping"
 			class="org.springframework.web.servlet.handler.SimpleUrlHandlerMapping">
 			<beans:property name="mappings">
@@ -59,50 +42,18 @@
 		<beans:property name="mappings">
 			<beans:props>
 				<beans:prop key="/board3/boardList.sp">boardList</beans:prop>
-<<<<<<< HEAD
-<<<<<<< HEAD
-=======
-<<<<<<< HEAD
-=======
->>>>>>> melll
 				<beans:prop key="/board3/boardDetail.sp">boardDetail</beans:prop>
 				<beans:prop key="/board3/jsonBoardList.sp">jsonBoardList</beans:prop>
 				<beans:prop key="/board3/boardInsert.sp">boardInsert</beans:prop>
 				<beans:prop key="/board3/boardUpdate.sp">boardUpdate</beans:prop>
 				<beans:prop key="/board3/boardDelete.sp">boardDelete</beans:prop>
-=======
-<<<<<<< HEAD
->>>>>>> melll
-=======
->>>>>>> melll
-					<beans:prop key="/board3/boardDetail.sp">boardDetail</beans:prop>
-					<beans:prop key="/board3/jsonBoardList.sp">jsonBoardList</beans:prop>
-					<beans:prop key="/board3/boardInsert.sp">boardInsert</beans:prop>
-					<beans:prop key="/board3/boardUpdate.sp">boardUpdate</beans:prop>
-					<beans:prop key="/board3/boardDelete.sp">boardDelete</beans:prop>
-<<<<<<< HEAD
-<<<<<<< HEAD
-=======
->>>>>>> 5f2df30e1dc070e66229c72c2198d9463d22c215
->>>>>>> melll
-=======
->>>>>>> 5f2df30e1dc070e66229c72c2198d9463d22c215
->>>>>>> melll
 			</beans:props>
 		</beans:property>
 	</beans:bean>	  	
-  	
-	<!-- Handles HTTP GET requests for /resources/** by efficiently serving up static resources in the ${webappRoot}/resources directory -->
-	<resources mapping="/resources/**" location="/resources/" />
-
-	<!-- Resolves views selected for rendering by @Controllers to .jsp resources in the /WEB-INF/views directory -->
+  		<resources mapping="/resources/**" location="/resources/" />
 	<beans:bean class="org.springframework.web.servlet.view.InternalResourceViewResolver">
 		<beans:property name="prefix" value="/WEB-INF/views/" />
 		<beans:property name="suffix" value=".jsp" />
 	</beans:bean>
-	
 	<context:component-scan base-package="com.example.prac" />
-	
-	
-	
 </beans:beans>
