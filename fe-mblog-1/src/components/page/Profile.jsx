@@ -35,7 +35,7 @@ const Profile = () => {
         window.localStorage.removeItem("userId");
         window.localStorage.removeItem("userNickname");
         window.localStorage.removeItem("userImage");
-        window.Kakao.Auth.
+        // window.Kakao.Auth;
         // window.localStorage.clear();
         navigate("/");
       })

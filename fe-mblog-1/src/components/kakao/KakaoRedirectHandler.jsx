@@ -36,7 +36,7 @@ const KakaoRedirectHandler = () => {
       window.Kakao.init(process.env.REACT_APP_KAKAO_JS_KEY);
       console.log(res.data.access_token);
       window.Kakao.Auth.setAccessToken(res.data.access_token);
-      navigate("/profile");
+      navigate("/home");
     } catch (error) {
       console.log(error);
     }
