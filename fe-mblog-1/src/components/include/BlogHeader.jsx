@@ -7,11 +7,8 @@ const BlogHeader = () => {
     <div>
       <Navbar bg="light">
         <Container>
-          <Link to="/" className="nav-link">
-            Navbar
-          </Link>
           <Nav className="me-auto">
-            <Link to="/home" className="nav-link">
+            <Link to="/" className="nav-link">
               Home
             </Link>
             <Link to="/dept" className="nav-link">
